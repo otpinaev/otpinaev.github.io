@@ -1,0 +1,128 @@
+body {
+	background-image: url(img/bg-dsktp.jpg);
+	background-repeat: no-repeat;
+	height: 100vh;
+	font-family: "Museo Sans Cyrl", "Roboto", sans-serif;
+}
+
+
+h1 {
+	font-style: normal;
+	font-weight: 900;
+	font-size: 50px;
+	line-height: 125%;
+	color: #FFFFFF;
+	margin-top: 105px;
+	margin-bottom: 65px;
+}
+
+span {
+	color: #FFA800;
+}
+
+p {
+	color: #fff;
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 125%;
+}
+p.min {
+	font-size: 14px;
+	margin-top: 150px;
+}
+
+.advantage img {
+	margin-right: 10px;
+}
+
+.button {
+	position: relative;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+.buttonBack {
+	top: 4px;
+	position: absolute;
+	width: 350px;
+	height: 80px;
+	background: #FFA800;
+	border-radius: 42px;
+	box-shadow: 0px 10px 80px rgba(255, 168, 0, 0.3);
+	transition: box-shadow .2s ease-in 0s;
+}
+.button:hover .buttonBack {
+	box-shadow: 0px 10px 80px rgba(255, 168, 0, 0);
+}
+
+.buttonTop {
+	top: 2px;
+	position: absolute;
+	width: 350px;
+	height: 80px;
+	background: linear-gradient(172.44deg, #4CE147 -30.13%, #0CA808 106.76%);
+	border-radius: 42px;
+	transition: top .2s ease-in 0s;
+}
+.button:hover .buttonTop {
+	top: 4px;
+}
+.buttonText {
+	position: absolute;
+    top: 25px;
+    left: 17%;
+    color: #fff;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.buttonText img{
+	margin-right: 10px;
+}
+
+/*576 devices*/
+@media (max-width: 576px) {
+	
+	body {
+		background-image: url(img/bg-mob-4.jpg);
+		background-repeat: no-repeat;
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+
+	h1 {
+		font-size: 30px;
+		margin-top: 350px;
+		margin-bottom: 4vh;
+	}
+	
+	p {
+		font-size: 14px;
+	}
+	p.min {
+		font-style: 8px;
+		margin-top: 2vh;
+	}
+
+	.button {
+		margin-top: 1vh;
+		font-size: 12px;
+	}
+
+	.buttonBack, .buttonTop {
+		width: 310px;
+		height: 60px;
+	}
+
+	.buttonText {
+		top: 18px;
+		left: 23%;
+	}
+
+	.buttonText img {
+   		height: 20px;
+   	}
+}
+
+}
+
